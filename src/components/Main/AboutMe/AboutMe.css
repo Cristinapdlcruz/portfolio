@@ -1,0 +1,18 @@
+.aboutMe {
+  background-color: var(--color-1);
+  color: var(--color-3);
+  padding: 100px;
+  height: auto;
+}
+
+.aboutMe > h2 {
+  font-size: 50px;
+  font-weight: 800;
+  padding: 0 0 15px 0;
+}
+
+.aboutMe > p {
+  font-size: 30px;
+  font-weight: 300;
+  max-width: 60%;
+}

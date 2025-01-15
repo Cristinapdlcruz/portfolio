@@ -1,0 +1,35 @@
+main {
+  background-color: var(--color-3);
+  height: 100%;
+}
+
+.Home {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  align-items: center;
+  padding: 10px;
+  height: 500px;
+}
+
+.welcome > h3 {
+  color: var(--color-1);
+  font-size: 24px;
+  font-weight: 400;
+  padding: 25px 0;
+}
+
+.welcome > h2 {
+  color: var(--color-4);
+  font-size: 55px;
+  font-weight: 900;
+}
+
+.Home > img {
+  border-radius: 100%;
+  width: 230px;
+  height: 280px;
+  background-color: rgba(255, 255, 255, 0.765);
+  padding: 5px;
+  border: 3px solid black;
+}

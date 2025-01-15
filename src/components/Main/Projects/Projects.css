@@ -1,0 +1,64 @@
+.Projects {
+  background-color: var(--color-1);
+  padding: 50px;
+}
+.Projects > h2,
+h4 {
+  color: var(--color-3);
+}
+
+.Projects > h2 {
+  font-size: 50px;
+  font-weight: 700;
+  padding-bottom: var(--padding-s);
+}
+
+.Projects > h4 {
+  font-size: 30px;
+  font-weight: 400;
+  padding-bottom: var(--padding-xl);
+}
+
+.divProjects {
+  display: flex;
+  gap: 20px;
+}
+
+.project-card {
+  max-width: 220px;
+  height: 280px;
+  background-color: var(--color-5);
+  border-radius: 10px;
+}
+.project-card > img {
+  padding: var(--padding-m) var(--padding-s);
+  width: 90%;
+  height: 160px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-card > h3 {
+  font-weight: 800;
+  font-size: 15px;
+  padding: var(--padding-s) var(--padding-s);
+}
+
+.project-card > p {
+  font-size: 12px;
+  padding-left: var(--padding-s);
+  padding-bottom: var(--padding-m);
+}
+
+.project-card > button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background-color: var(--color-3);
+  color: var(--color-1);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
