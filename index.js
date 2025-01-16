@@ -5,6 +5,7 @@ import { AboutMe } from './src/components/Main/AboutMe/AboutMe'
 import { Skills } from './src/components/Main/Skills/Skills'
 import { Experience } from './src/components/Main/Experience-Studies/Experience'
 import { Projects } from './src/components/Main/Projects/Projects'
+import { Contact } from './src/components/Main/Contact/Contact'
 
 Header()
 Home()
@@ -12,3 +13,4 @@ AboutMe()
 Skills()
 Experience()
 Projects()
+Contact()
