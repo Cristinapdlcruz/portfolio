@@ -10,17 +10,73 @@
   justify-content: space-around;
   max-width: 100%;
   height: 150px;
-  gap: 25px;
 }
 
 .skills > h2 {
   font-size: 50px;
   font-weight: 800;
-  padding: 0 0 50px 0;
+  padding: 0px 0px 40px 0px;
   text-align: center;
 }
 
 .skills > div > img {
   width: 90px;
   height: 90px;
+  margin: 10px;
+}
+
+@media (max-width: 804px) {
+  .skills {
+    padding: 0px 20px;
+    height: auto;
+  }
+  .skills > div {
+    height: 120px;
+  }
+  .skills > h2 {
+    font-size: 40px;
+    padding: 10px 0px 40px 0px;
+  }
+  .skills > div > img {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 643px) {
+  .skills > div {
+    height: 300px;
+  }
+  .skills > h2 {
+    font-size: 64px;
+    font-weight: 800;
+    padding: 10px 0px 15px 0px;
+  }
+
+  .skills > div {
+    display: grid;
+    grid-template-rows: repeat (3, 1fr);
+    grid-template-columns: repeat (3, auto);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    grid-template-areas:
+      'logo1 logo2 logo3'
+      'logo4 logo5 logo6'
+      '.     logo7 .';
+  }
+  .skills > div > img {
+    max-width: 100%;
+    max-height: auto;
+    object-fit: contain;
+  }
+}
+@media (max-width: 311px) {
+  .skills > h2 {
+    font-size: 40px;
+    font-weight: 800;
+    padding: 10px 0px 10px 0px;
+  }
 }

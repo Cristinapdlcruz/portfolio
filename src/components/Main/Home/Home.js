@@ -9,18 +9,22 @@ export const Home = () => {
   const idea = document.createElement('h3')
   const myPhoto = document.createElement('img')
 
-  divMain.className = 'welcome'
   sectionHome.className = 'Home'
+  divMain.className = 'welcome'
+  saludo.className = 'saludo'
   saludo.textContent = 'Hello 👋🏻'
+  webD.className = 'webH2'
   webD.innerHTML = "I'm a web <br> Developer"
+  idea.className = 'ideaH3'
   idea.textContent = 'I build thing for web'
+  myPhoto.className = 'photo'
   myPhoto.src = './src/components/Main/Home/me.PNG'
   myPhoto.alt = 'Foto de [Cristina A. Pérez]'
 
   mainHTML.append(sectionHome)
   sectionHome.append(divMain)
-  sectionHome.append(myPhoto)
   divMain.append(saludo)
   divMain.append(webD)
   divMain.append(idea)
+  sectionHome.append(myPhoto)
 }

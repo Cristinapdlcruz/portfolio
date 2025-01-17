@@ -6,6 +6,7 @@ header {
   align-items: center;
   padding: var(--padding-l) 60px;
   gap: 40px;
+  max-width: 100%;
 }
 
 header > h1 {
@@ -21,4 +22,75 @@ header > h1 {
 .divH > ul > li {
   padding: var(--padding-m);
   cursor: pointer;
+}
+
+.iconMenu {
+  display: none;
+}
+.contactName {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+@media (max-width: 1021px) {
+  header {
+    padding: var(--padding-m) 35px;
+  }
+  header > h1 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: var(--margin-m);
+  }
+
+  .divH > ul > li,
+  .contactName {
+    font-size: 15px;
+    padding: var(--padding-m);
+  }
+}
+
+@media (max-width: 812px) {
+  header > h1 {
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: var(--margin-xs);
+  }
+  .divH > ul > li,
+  .contactName {
+    font-size: 12px;
+    padding: var(--padding-m);
+  }
+}
+
+@media (max-width: 718px) {
+  header > h1 {
+    font-size: 12px;
+    font-weight: 300;
+    margin-right: var(--margin-xs);
+  }
+  .divH > ul > li,
+  .contactName {
+    font-size: 12px;
+    padding: var(--padding-s);
+  }
+}
+@media (max-width: 642px) {
+  .divH {
+    display: none;
+  }
+  header > h1 {
+    font-size: 15px;
+    font-weight: 300;
+    margin-right: var(--margin-xs);
+  }
+  .contactName {
+    display: none;
+  }
+  .iconMenu {
+    display: block;
+    cursor: pointer;
+  }
+  .iconMenu > img {
+    width: 18px;
+  }
 }

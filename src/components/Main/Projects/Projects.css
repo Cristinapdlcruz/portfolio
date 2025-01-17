@@ -62,3 +62,81 @@ h4 {
   font-weight: 500;
   cursor: pointer;
 }
+@media (max-width: 1013px) {
+  .Projects > h2,
+  .Projects > h4 {
+    text-align: center;
+  }
+  .divProjects {
+    display: grid;
+    grid-template-rows: repeat (2, 1fr);
+    grid-template-columns: repeat (2, auto);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    grid-template-areas:
+      'project-card1 project-card2'
+      'project-card3 project-card4';
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 549px) {
+  .Projects > h2 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .Projects > h4 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .divProjects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-card {
+    max-width: 400px;
+    height: 450px;
+  }
+  .project-card > img {
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .project-card > h3 {
+    font-size: 18px;
+  }
+  .project-card > p {
+    font-size: 15px;
+  }
+  .project-card > button {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 309px) {
+  .Projects > h2 {
+    font-size: 34px;
+    font-weight: 600;
+  }
+  .Projects > h4 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .project-card {
+    max-width: 400px;
+    height: 380px;
+  }
+  .project-card > img {
+    height: 200px;
+  }
+  .project-card > h3 {
+    font-size: 20px;
+  }
+  .project-card > p {
+    font-size: 17px;
+  }
+}
